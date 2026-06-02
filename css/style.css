@@ -12,18 +12,26 @@
   --radius: 18px;
   --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
   --maxw: 1080px;
+  --font-body: "Caveat", "Segoe Script", cursive;
+  --font-head: "Dancing Script", "Caveat", cursive;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; font-size: 18px; }
 
 body {
-  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font-body);
+  font-size: 1.15rem;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.65;
+  line-height: 1.5;
   overflow-x: hidden;
+}
+
+/* Başlıklar ve logo el yazısı (Dancing Script) */
+h1, h2, h3, .logo, .section-title, .stat-num, .hero-text h1 {
+  font-family: var(--font-head);
 }
 
 .container { width: 90%; max-width: var(--maxw); margin: 0 auto; }
