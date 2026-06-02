@@ -360,6 +360,14 @@ a { text-decoration: none; color: inherit; }
 }
 .social-link:hover { transform: translateY(-4px); border-color: var(--c2); box-shadow: 0 10px 22px rgba(236, 72, 153, 0.35); }
 .copyright { color: var(--muted); font-size: 0.85rem; }
+.site-version { color: var(--muted); font-size: 0.75rem; opacity: 0.7; margin-top: 0.5rem; }
+.site-version #ver {
+  font-weight: 600;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 /* ===================== SCROLL-REVEAL ANİMASYON ===================== */
 .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
