@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zehra Yalçınkaya | Portfolyo</title>
+  <meta name="description" content="Zehra Yalçınkaya - Bilgisayar Mühendisliği Öğrencisi Portfolyo Sitesi" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">Zehra<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hakkimda" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+        <a href="#yetenekler" data-tr="Yetenekler" data-en="Skills">Yetenekler</a>
+        <a href="#projeler" data-tr="Projeler" data-en="Projects">Projeler</a>
+        <a href="#egitim" data-tr="Eğitim & CV" data-en="Education & CV">Eğitim & CV</a>
+        <a href="#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a>
+        <button class="lang-btn" id="langBtn" aria-label="Dil değiştir / Change language">EN</button>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="container hero-inner">
+      <div class="hero-text reveal">
+        <p class="hero-greeting" data-tr="Merhaba, ben 👋" data-en="Hello, I'm 👋">Merhaba, ben 👋</p>
+        <h1>Zehra Yalçınkaya</h1>
+        <h2 class="hero-role" data-tr="Bilgisayar Mühendisliği Öğrencisi" data-en="Computer Engineering Student">Bilgisayar Mühendisliği Öğrencisi</h2>
+        <p class="hero-desc" data-tr="Yapay zekâ ve siber güvenliğe tutkulu, programlamada sağlam temele sahip bir bilgisayar mühendisliği öğrencisiyim. Derin öğrenme ve yazılım geliştirmede yenilikçi çözümler üretmeyi seviyorum."
+           data-en="A Computer Engineering student passionate about Artificial Intelligence and cybersecurity, with a strong foundation in programming. I love building innovative solutions in deep learning and software development.">
+          Yapay zekâ ve siber güvenliğe tutkulu, programlamada sağlam temele sahip bir bilgisayar mühendisliği öğrencisiyim. Derin öğrenme ve yazılım geliştirmede yenilikçi çözümler üretmeyi seviyorum.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projeler" class="btn btn-primary" data-tr="Projelerim" data-en="My Projects">Projelerim</a>
+          <a href="#iletisim" class="btn btn-ghost" data-tr="İletişim" data-en="Contact">İletişim</a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <!-- BURAYI DÜZENLE: assets/zehra-foto.jpg dosyanı ekleyince fotoğraf otomatik görünür -->
+        <div class="photo-frame">
+          <img src="assets/zehra-foto.jpg" alt="Zehra Yalçınkaya"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="photo-placeholder">ZY</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HAKKIMDA ===================== -->
+  <section class="section" id="hakkimda">
+    <div class="container">
+      <h2 class="section-title reveal" data-tr="Hakkımda" data-en="About Me">Hakkımda</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-tr="Merhaba! Ben Zehra Yalçınkaya. Recep Tayyip Erdoğan Üniversitesi'nde Bilgisayar Mühendisliği öğrencisiyim. Yapay zekâ, derin öğrenme ve siber güvenlik alanlarına büyük ilgi duyuyorum."
+             data-en="Hi! I'm Zehra Yalçınkaya, a Computer Engineering student at Recep Tayyip Erdoğan University. I'm deeply interested in artificial intelligence, deep learning, and cybersecurity.">
+            Merhaba! Ben Zehra Yalçınkaya. Recep Tayyip Erdoğan Üniversitesi'nde Bilgisayar Mühendisliği öğrencisiyim. Yapay zekâ, derin öğrenme ve siber güvenlik alanlarına büyük ilgi duyuyorum.
+          </p>
+          <p data-tr="Sorumluluk sahibi ve uyumlu bir takım oyuncusuyum. Akademik bilgimi ve teknik becerilerimi gerçek projelere dönüştürmeyi, yenilikçi çözümler üretmeyi seviyorum."
+             data-en="I'm a responsible and effective team player. I love turning my academic knowledge and technical skills into real projects and building innovative solutions.">
+            Sorumluluk sahibi ve uyumlu bir takım oyuncusuyum. Akademik bilgimi ve teknik becerilerimi gerçek projelere dönüştürmeyi, yenilikçi çözümler üretmeyi seviyorum.
+          </p>
+          <ul class="about-facts">
+            <li><strong data-tr="📍 Konum:" data-en="📍 Location:">📍 Konum:</strong> <span data-tr="Rize, Türkiye" data-en="Rize, Türkiye">Rize, Türkiye</span></li>
+            <li><strong data-tr="🎓 Bölüm:" data-en="🎓 Major:">🎓 Bölüm:</strong> <span data-tr="Bilgisayar Mühendisliği — RTEÜ" data-en="Computer Engineering — RTEU">Bilgisayar Mühendisliği — RTEÜ</span></li>
+            <li><strong data-tr="💡 İlgi:" data-en="💡 Interests:">💡 İlgi:</strong> <span data-tr="Yapay Zekâ, Derin Öğrenme, Siber Güvenlik" data-en="AI, Deep Learning, Cybersecurity">Yapay Zekâ, Derin Öğrenme, Siber Güvenlik</span></li>
+          </ul>
+        </div>
+        <div class="about-card reveal">
+          <div class="stat"><span class="stat-num">3+</span><span class="stat-label" data-tr="Proje" data-en="Projects">Proje</span></div>
+          <div class="stat"><span class="stat-num">10+</span><span class="stat-label" data-tr="Teknoloji" data-en="Technologies">Teknoloji</span></div>
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label" data-tr="Sertifika" data-en="Certificates">Sertifika</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== YETENEKLER ===================== -->
+  <section class="section section-alt" id="yetenekler">
+    <div class="container">
+      <h2 class="section-title reveal" data-tr="Yetenekler" data-en="Skills">Yetenekler</h2>
+      <p class="section-subtitle reveal" data-tr="Kullandığım diller ve teknolojiler" data-en="Languages and technologies I use">Kullandığım diller ve teknolojiler</p>
+      <div class="skills-grid reveal">
+        <span class="skill-badge">🐍 Python</span>
+        <span class="skill-badge">☕ Java</span>
+        <span class="skill-badge">🇨 C / C++</span>
+        <span class="skill-badge">⚙️ Assembly</span>
+        <span class="skill-badge">🧠 Deep Learning</span>
+        <span class="skill-badge">🎭 GANs</span>
+        <span class="skill-badge">👁️ Computer Vision (YOLOv8)</span>
+        <span class="skill-badge">🔧 Git & GitHub</span>
+        <span class="skill-badge">🌐 Cisco Packet Tracer</span>
+        <span class="skill-badge">🔌 Networking</span>
+        <span class="skill-badge">🎬 Video Editing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJELER ===================== -->
+  <section class="section" id="projeler">
+    <div class="container">
+      <h2 class="section-title reveal" data-tr="Projeler" data-en="Projects">Projeler</h2>
+      <p class="section-subtitle reveal" data-tr="Üzerinde çalıştığım bazı projeler" data-en="Some projects I've worked on">Üzerinde çalıştığım bazı projeler</p>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-top">🤖</div>
+          <div class="project-body">
+            <span class="project-date">2024 — <span data-tr="Devam ediyor" data-en="Present">Devam ediyor</span></span>
+            <h3 data-tr="TÜBİTAK Robolig" data-en="TÜBİTAK Robolig">TÜBİTAK Robolig</h3>
+            <p data-tr="TÜBİTAK kapsamında robotik ve mühendislik yarışmalarında aktif olarak yer aldım. Medikal görüntüleme için Üretici Çekişmeli Ağlar (GAN) üzerine araştırmalar yaptım."
+               data-en="Actively participated in robotics and engineering challenges under TÜBİTAK. Conducted research on Generative Adversarial Networks (GANs) for medical imaging applications.">
+              TÜBİTAK kapsamında robotik ve mühendislik yarışmalarında aktif olarak yer aldım. Medikal görüntüleme için Üretici Çekişmeli Ağlar (GAN) üzerine araştırmalar yaptım.
+            </p>
+            <div class="project-tags"><span>GANs</span><span>Deep Learning</span><span>Python</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">👁️</div>
+          <div class="project-body">
+            <span class="project-date" data-tr="Nisan 2026" data-en="April 2026">Nisan 2026</span>
+            <h3 data-tr="Teknofest 5G Hız ve Detay Analizi" data-en="Teknofest 5G Speed & Detail Analysis">Teknofest 5G Hız ve Detay Analizi</h3>
+            <p data-tr="YOLOv8 kullanarak gerçek zamanlı video analizi ve performans takibi yapan bir bilgisayarlı görü sistemi geliştirdim."
+               data-en="Implemented a computer vision system using YOLOv8 for real-time video analysis and performance tracking.">
+              YOLOv8 kullanarak gerçek zamanlı video analizi ve performans takibi yapan bir bilgisayarlı görü sistemi geliştirdim.
+            </p>
+            <div class="project-tags"><span>YOLOv8</span><span>Computer Vision</span><span>Python</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">🗓️</div>
+          <div class="project-body">
+            <span class="project-date">2025 — 2026</span>
+            <h3 data-tr="Ev İşleri Planlayıcı" data-en="Household Chore Scheduler">Ev İşleri Planlayıcı</h3>
+            <p data-tr="Nesne yönelimli tasarım ve verimli veri yapılarına odaklanan, C++ ve Java ile geliştirilmiş çapraz platform bir uygulama."
+               data-en="A cross-platform application developed in C++ and Java focusing on object-oriented design and efficient data structures.">
+              Nesne yönelimli tasarım ve verimli veri yapılarına odaklanan, C++ ve Java ile geliştirilmiş çapraz platform bir uygulama.
+            </p>
+            <div class="project-tags"><span>C++</span><span>Java</span><span>OOP</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EĞİTİM & CV ===================== -->
+  <section class="section section-alt" id="egitim">
+    <div class="container">
+      <h2 class="section-title reveal" data-tr="Eğitim & CV" data-en="Education & CV">Eğitim & CV</h2>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 — 2028 <span data-tr="(Beklenen)" data-en="(Expected)">(Beklenen)</span></span>
+            <h3 data-tr="Bilgisayar Mühendisliği (Lisans)" data-en="Computer Engineering (B.Sc.)">Bilgisayar Mühendisliği (Lisans)</h3>
+            <p data-tr="Recep Tayyip Erdoğan Üniversitesi — Türkiye" data-en="Recep Tayyip Erdoğan University — Türkiye">Recep Tayyip Erdoğan Üniversitesi — Türkiye</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 — 2024</span>
+            <h3 data-tr="İngilizce Hazırlık Programı" data-en="English Preparatory Program">İngilizce Hazırlık Programı</h3>
+            <p data-tr="Recep Tayyip Erdoğan Üniversitesi — GANO: 4.00/4.00" data-en="Recep Tayyip Erdoğan University — GPA: 4.00/4.00">Recep Tayyip Erdoğan Üniversitesi — GANO: 4.00/4.00</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading reveal" data-tr="Sertifikalar" data-en="Certificates">Sertifikalar</h3>
+      <div class="cert-grid reveal">
+        <span class="cert-badge" data-tr="🏅 Cisco Packet Tracer & Networking Basics (2026)" data-en="🏅 Cisco Packet Tracer & Networking Basics (2026)">🏅 Cisco Packet Tracer & Networking Basics (2026)</span>
+        <span class="cert-badge" data-tr="🏅 English For IT - Cisco Networking Academy (2025)" data-en="🏅 English For IT - Cisco Networking Academy (2025)">🏅 English For IT - Cisco Networking Academy (2025)</span>
+        <span class="cert-badge" data-tr="🏅 Veri Bilimi & YZ Katılımı - Coderspace (2024)" data-en="🏅 Data Science & AI Participation - Coderspace (2024)">🏅 Veri Bilimi & YZ Katılımı - Coderspace (2024)</span>
+        <span class="cert-badge" data-tr="🏅 Full Stack Developer Programı - GoIT (2024)" data-en="🏅 Full Stack Developer Program - GoIT (2024)">🏅 Full Stack Developer Programı - GoIT (2024)</span>
+        <span class="cert-badge" data-tr="🏅 TEKNOYETKİN Proje Katılımı - ÜNİDES (2024)" data-en="🏅 TEKNOYETKİN Project Participation - ÜNİDES (2024)">🏅 TEKNOYETKİN Proje Katılımı - ÜNİDES (2024)</span>
+      </div>
+      <div class="cv-cta reveal">
+        <!-- BURAYI DÜZENLE: assets/cv.pdf dosyanı ekleyince indirme çalışır -->
+        <a href="assets/cv.pdf" class="btn btn-primary" download data-tr="📄 CV İndir" data-en="📄 Download CV">📄 CV İndir</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== İLETİŞİM / FOOTER ===================== -->
+  <footer class="footer" id="iletisim">
+    <div class="container footer-inner">
+      <h2 class="section-title reveal" data-tr="İletişime Geç" data-en="Get in Touch">İletişime Geç</h2>
+      <p class="reveal" data-tr="Benimle iletişime geçmekten çekinme!" data-en="Feel free to reach out to me!">Benimle iletişime geçmekten çekinme!</p>
+      <div class="social-links reveal">
+        <a href="mailto:zehrayalcinkaya2005@gmail.com" class="social-link">✉️ <span>E-posta</span></a>
+        <a href="tel:+905066724143" class="social-link">📞 <span>+90 0506 672 41 43</span></a>
+        <a href="https://github.com/ZehraYalcinkaya" target="_blank" rel="noopener" class="social-link">💻 <span>GitHub</span></a>
+        <a href="https://linkedin.com/in/zehra-yalçınkaya-6aa77032a" target="_blank" rel="noopener" class="social-link">🔗 <span>LinkedIn</span></a>
+      </div>
+      <p class="copyright">© <span id="year"></span> Zehra Yalçınkaya — <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
